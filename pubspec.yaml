@@ -1,8 +1,11 @@
 name: network_progress
 description: Helpers for showing network progress and retrying failed requests
-version: 0.0.1
+version: 0.1.0
 author:
 homepage:
+
+environment:
+  sdk: '>=2.0.0 <3.0.0'
 
 dependencies:
   flutter:
