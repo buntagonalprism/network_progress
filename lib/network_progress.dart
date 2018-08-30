@@ -45,6 +45,7 @@ void showRetryOnError<T>({@required BuildContext context,
       doRetry = false;
       handler(result);
     } catch (e) {
+      print("Retry On Error Exception Caught: '$e'");
       if (after != null) {
         after();
       }
