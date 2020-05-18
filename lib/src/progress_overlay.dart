@@ -29,14 +29,14 @@ class ProgressState extends Equatable {
         systemError = null;
 
   /// An error occured which the user can handle. Displays the [UserErrorDialog]
-  ProgressState.userError({@required this.userError})
+  ProgressState.userError(this.userError)
       : loading = false,
         message = null,
         systemError = null;
 
   /// An error occured which the user can do nothing about - something we did not
   /// expect, or a network failure etc. Runs the [systemErrorhandler] of [ProgressOverlay]
-  ProgressState.systemError({@required this.systemError})
+  ProgressState.systemError(this.systemError)
       : loading = false,
         message = null,
         userError = null;
