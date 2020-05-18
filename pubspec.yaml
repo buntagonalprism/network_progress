@@ -5,9 +5,14 @@ author:
 homepage:
 
 environment:
-  sdk: '>=2.0.0 <3.0.0'
+  sdk: '>=2.6.0 <3.0.0'
 
 dependencies:
+  equatable: '>=1.0.0 <2.0.0'
+  building_blocs:
+    git: 
+      url: https://github.com/buntagonalprism/building_blocs.git
+      ref: add-streams
   flutter:
     sdk: flutter
 
